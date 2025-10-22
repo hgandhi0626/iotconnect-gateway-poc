@@ -1,0 +1,30 @@
+# python virtual environment
+.venv/
+venv/
+__pycache__/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Certificate files
+certs/
+*.pem
+*.crt
+*.key
+
+# Log files
+*.log
+logs/
+
+# OS files
+.DS_Store
+
+# IotConnect SDK
+iotconnect/
+
+# Envrionment files
+.env
+.env.local

@@ -1,0 +1,181 @@
+{
+  "devices": [
+    {
+      "type": "gateway",
+      "name": "Gateway-v3",
+      "uniqueId": "GW-20001448",
+      "tag": "gateway",
+      "attributes": {
+        "hb": {
+          "network_info": {},
+          "versions": {},
+          "timestamps": {}
+        },
+        "zigbee_network": {},
+        "zigbee_devices": {}
+      }
+    },
+    {
+      "type": "thermostat",
+      "model": "PCT504-E",
+      "devices": [
+        {
+          "name": "Thermostat-504112112200301",
+          "uniqueId": "Stat-1",
+          "attributes": {
+            "genBasic": {},
+            "hvacFanCtrl": {},
+            "hvacThermostat": {},
+            "hvacUserInterfaceCfg": {},
+            "linkquality": 0,
+            "relative_humidity": 0,
+            "msOccupancySensing": false,
+            "schedule_active": false
+          }
+        },
+        {
+          "name": "Thermostat-504112112200204",
+          "uniqueId": "Stat-2",
+          "attributes": {
+            "genBasic": {},
+            "hvacFanCtrl": {},
+            "hvacThermostat": {},
+            "hvacUserInterfaceCfg": {},
+            "linkquality": 0,
+            "relative_humidity": 0,
+            "msOccupancySensing": false,
+            "schedule_active": false
+          }
+        },
+        {
+          "name": "Thermostat-504112112302130096",
+          "uniqueId": "Stat-3",
+          "attributes": {
+            "genBasic": {},
+            "hvacFanCtrl": {},
+            "hvacThermostat": {},
+            "hvacUserInterfaceCfg": {},
+            "linkquality": 0,
+            "relative_humidity": 0,
+            "msOccupancySensing": false,
+            "schedule_active": false
+          }
+        },
+        {
+          "name": "Thermostat-504112112302130105",
+          "uniqueId": "Stat-4",
+          "attributes": {
+            "genBasic": {},
+            "hvacFanCtrl": {},
+            "hvacThermostat": {},
+            "hvacUserInterfaceCfg": {},
+            "linkquality": 0,
+            "relative_humidity": 0,
+            "msOccupancySensing": false,
+            "schedule_active": false
+          }
+        },
+        {
+          "name": "Thermostat-504112112302130456",
+          "uniqueId": "Stat-5",
+          "attributes": {
+            "genBasic": {},
+            "hvacFanCtrl": {},
+            "hvacThermostat": {},
+            "hvacUserInterfaceCfg": {},
+            "linkquality": 0,
+            "relative_humidity": 0,
+            "msOccupancySensing": false,
+            "schedule_active": false
+          }
+        },
+        {
+          "name": "Thermostat-504112112302130127",
+          "uniqueId": "Stat-6",
+          "attributes": {
+            "genBasic": {},
+            "hvacFanCtrl": {},
+            "hvacThermostat": {},
+            "hvacUserInterfaceCfg": {},
+            "linkquality": 0,
+            "relative_humidity": 0,
+            "msOccupancySensing": false,
+            "schedule_active": false
+          }
+        },
+        {
+          "name": "Thermostat-504112112302130232",
+          "uniqueId": "Stat-7",
+          "attributes": {
+            "genBasic": {},
+            "hvacFanCtrl": {},
+            "hvacThermostat": {},
+            "hvacUserInterfaceCfg": {},
+            "linkquality": 0,
+            "relative_humidity": 0,
+            "msOccupancySensing": false,
+            "schedule_active": false
+          }
+        },
+        {
+          "name": "Thermostat-504112112302130372",
+          "uniqueId": "Stat-8",
+          "attributes": {
+            "genBasic": {},
+            "hvacFanCtrl": {},
+            "hvacThermostat": {},
+            "hvacUserInterfaceCfg": {},
+            "linkquality": 0,
+            "relative_humidity": 0,
+            "msOccupancySensing": false,
+            "schedule_active": false
+          }
+        },
+        {
+          "name": "Thermostat-504112112302130017",
+          "uniqueId": "Stat-9",
+          "attributes": {
+            "genBasic": {},
+            "hvacFanCtrl": {},
+            "hvacThermostat": {},
+            "hvacUserInterfaceCfg": {},
+            "linkquality": 0,
+            "relative_humidity": 0,
+            "msOccupancySensing": false,
+            "schedule_active": false
+          }
+        },
+        {
+          "name": "Thermostat-504112112302130369",
+          "uniqueId": "Stat-10",
+          "attributes": {
+            "genBasic": {},
+            "hvacFanCtrl": {},
+            "hvacThermostat": {},
+            "hvacUserInterfaceCfg": {},
+            "linkquality": 0,
+            "relative_humidity": 0,
+            "msOccupancySensing": false,
+            "schedule_active": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "thermostat",
+      "model": "TBH300",
+      "uniqueId": "ENG-300-707-003",
+      "attributes": {
+        "genBasic": {},
+        "hvacFanCtrl": {},
+        "hvacThermostat": {},
+        "hvacUserInterfaceCfg": {},
+        "linkquality": 0,
+        "relative_humidity": 0,
+        "msOccupancySensing": false,
+        "schedule_active": false,
+        "manuSpecificUniversalElectronics": {}
+      }
+    }
+  ]
+}

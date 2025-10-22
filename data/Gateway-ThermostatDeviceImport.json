@@ -1,0 +1,71 @@
+{
+    "_meta": {
+        "at": 3,
+        "v": 1.1
+    },
+    "gateway": {
+        "items": [
+            {
+                "name": "Gateway-v3",
+                "uniqueId": "GW-20001448",
+                "items": [
+                    {
+                        "name": "Stat-1",
+                        "uniqueId": "Thermostat-504112112200301",
+                        "tag": "thermostat"
+                    },
+                    {
+                        "name": "Stat-2",
+                        "uniqueId": "Thermostat-504112112200204",
+                        "tag": "thermostat"
+                    },
+                    {
+                        "name": "Stat-3",
+                        "uniqueId": "Thermostat-504112302130096",
+                        "tag": "thermostat"
+                    },
+                    {
+                        "name": "Stat-4",
+                        "uniqueId": "Thermostat-504112302130105",
+                        "tag": "thermostat"
+                    },
+                    {
+                        "name": "Stat-5",
+                        "uniqueId": "Thermostat-504112302130456",
+                        "tag": "thermostat"
+                    },
+                    {
+                        "name": "Stat-6",
+                        "uniqueId": "Thermostat-504112302130127",
+                        "tag": "thermostat"
+                    },
+                    {
+                        "name": "Stat-7",
+                        "uniqueId": "Thermostat-504112302130232",
+                        "tag": "thermostat"
+                    },
+                    {
+                        "name": "Stat-8",
+                        "uniqueId": "Thermostat-504112302130372",
+                        "tag": "thermostat"
+                    },
+                    {
+                        "name": "Stat-9",
+                        "uniqueId": "Thermostat-504112302130017",
+                        "tag": "thermostat"
+                    },
+                    {
+                        "name": "Stat-10",
+                        "uniqueId": "Thermostat-504112302130369",
+                        "tag": "thermostat"
+                    },
+                    {
+                        "name": "UEI",
+                        "uniqueId": "ENG-300-707-003",
+                        "tag": "thermostat"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,376 @@
+{
+    "hb": {
+        "config_file_timestamp": "2025-05-17T03:16:20.070558+00:00",
+        "configured": true,
+        "download_config_success": true,
+        "download_firmware_success": true,
+        "fixed_id": "2941008C7954",
+        "gateway_firmware_timestamp": "2025-05-17T00:12:32.626722+00:00",
+        "gateway_reboot_success": true,
+        "gateway_start_timestamp": "2025-05-17T03:16:19.992342+00:00",
+        "gateway_stop_timestamp": "2025-05-17T03:15:48.044282+00:00",
+        "gateway_version": "3.2.40",
+        "hostname": "raspberrypi",
+        "mac_address": "b8:27:eb:3f:f0:11",
+        "net_address": {
+            "ip_v4": "192.168.68.123",
+            "ip_v6": "fe80::3868:668e:93b4:9c1f"
+        },
+        "ota_firmware_timestamp": "2024-09-06T15:57:02.070944Z",
+        "ota_success": true,
+        "ota_version": "3.2.13",
+        "reason": "periodic",
+        "serial_id": "20002330"
+    },
+    "zigbee": {
+        "network": {
+            "channel": 11,
+            "extended_pan_id": "0x00124b0024cbee5f",
+            "pan_id": 55363
+        }
+    }
+},
+{
+    "device_id": "Thermostat-6888a100002cd9",
+    "timestamp": "2025-05-19T16:49:28.099413Z",
+    "zigbee": {
+        "genBasic": {
+            "appVersion": 1,
+            "dateCode": "20200513",
+            "hwVersion": 4,
+            "manufacturerName": "OWON Technology Inc.",
+            "modelId": "PCT504-E",
+            "powerSource": {
+                "primary": "dc source",
+                "secondary": false
+            },
+            "stackVersion": 0,
+            "zclVersion": 3
+        },
+        "genGroups": {
+            "nameSupport": false
+        },
+        "genIdentify": {
+            "identifyTime": 0
+        },
+        "genScenes": {
+            "count": 0,
+            "currentGroup": 0,
+            "currentScene": 0,
+            "nameSupport": false,
+            "sceneValid": false
+        },
+        "hvacFanCtrl": {
+            "fanMode": "auto",
+            "fanModeSequence": "low/med/high/auto"
+        },
+        "hvacThermostat": {
+            "absMaxCoolSetpointLimit": 95.0,
+            "absMaxHeatSetpointLimit": 86.0,
+            "absMinCoolSetpointLimit": 44.6,
+            "ctrlSeqeOfOper": "cooling with heating 4-pipes",
+            "localTemp": 77.0,
+            "maxCoolSetpointLimit": 95.0,
+            "maxHeatSetpointLimit": 86.0,
+            "minCoolSetpointLimit": 44.6,
+            "minHeatSetpointLimit": 41.0,
+            "minSetpointDeadBand": 2.7,
+            "numberOfDailyTrans": 5,
+            "numberOfWeeklyTrans": 7,
+            "occupiedCoolingSetpoint": 69.8,
+            "occupiedHeatingSetpoint": 62.6,
+            "programingOperMode": {
+                "auto_recovery_mode": "off",
+                "economy_energy_star_mode": "off",
+                "mode": "simple/setpoint mode"
+            },
+            "runningMode": "cool",
+            "runningState": {
+                "cool2ndStageStateOn": false,
+                "coolStateOn": true,
+                "fan2ndStageStateOn": false,
+                "fan3rdStageStateOn": true,
+                "fanStateOn": false,
+                "heat2ndStageStateOn": false,
+                "heatStateOn": false
+            },
+            "startOfWeek": "Monday",
+            "systemMode": "cool",
+            "systemTypeConfig": {
+                "coolingSystemStage": "cool stage 1",
+                "heatingFuelSource": "electric / B",
+                "heatingSystemStage": "heat stage 1",
+                "heatingSystemType": "conventional"
+            },
+            "tempSetpointHold": "setpoint hold on",
+            "tempSetpointHoldDuration": 1,
+            "unoccupiedCoolingSetpoint": 69.8,
+            "unoccupiedHeatingSetpoint": 62.6
+        },
+        "hvacUserInterfaceCfg": {
+            "keypadLockout": "no lockout",
+            "tempDisplayMode": "temperature in Celsius"
+        },
+        "linkquality": 204,
+        "msOccupancySensing": {
+            "occupancy": false,
+            "occupancySensorType": "ultrasonic",
+            "pirOToUDelay": 60
+        },
+        "msRelativeHumidity": {
+            "maxMeasuredValue": 100.0,
+            "measuredValue": 31.0,
+            "minMeasuredValue": 0.0
+        }
+    }
+},
+{
+    "device_id": "Thermostat-6888a100002cd9ed",
+    "timestamp": "2025-05-19T16:49:28.099413Z",
+    "zigbee": {
+        "genBasic": {
+            "appVersion": 10,
+            "dateCode": "20210915-DE-FB1",
+            "hwVersion": 0,
+            "locationDesc": "",
+            "manufacturerName": "Universal Electronics Inc.",
+            "modelId": "TBH300",
+            "physicalEnv": 0,
+            "powerSource": {
+                "primary": "mains (single phase)",
+                "secondary": false
+            },
+            "stackVersion": 0,
+            "zclVersion": 8
+        },
+        "hvacFanCtrl": {
+            "fanMode": "on",
+            "fanModeSequence": "on/auto"
+        },
+        "hvacThermostat": {
+            "absMaxCoolSetpointLimit": 112.01,
+            "absMaxHeatSetpointLimit": 97.02,
+            "absMinCoolSetpointLimit": 44.98,
+            "absMinHeatSetpointLimit": 29.98,
+            "ctrlSeqeOfOper": "cooling with heating 4-pipes",
+            "localTemp": 81.0,
+            "localTemperatureCalibration": 0,
+            "maxCoolSetpointLimit": 93.0,
+            "maxHeatSetpointLimit": 90.05,
+            "minCoolSetpointLimit": 60.01,
+            "minHeatSetpointLimit": 55.96,
+            "minSetpointDeadBand": 3.6,
+            "occupancy": false,
+            "occupiedCoolingSetpoint": 71.01,
+            "occupiedHeatingSetpoint": 68.0,
+            "runningMode": "cool",
+            "runningState": {
+                "cool2ndStageStateOn": true,
+                "coolStateOn": true,
+                "fan2ndStageStateOn": false,
+                "fan3rdStageStateOn": false,
+                "fanStateOn": true,
+                "heat2ndStageStateOn": false,
+                "heatStateOn": false
+            },
+            "systemMode": "auto",
+            "unoccupiedCoolingSetpoint": 75.0,
+            "unoccupiedHeatingSetpoint": 61.0
+        },
+        "hvacUserInterfaceCfg": {
+            "keypadLockout": "no lockout",
+            "tempDisplayMode": "temperature in Fahrenheit"
+        },
+        "linkquality": 167,
+        "manuSpecificUniversalElectronics": {
+            "remTempSensor1": {
+                "deviceId": "uei-temp1-6888a100002cd9ed",
+                "installed": true,
+                "lowBattery": false,
+                "name": "Remote Sensor",
+                "online": true,
+                "sensorType": "indoor",
+                "temperature": 81.0
+            },
+            "remTempSensor2": {
+                "deviceId": "uei-temp2-6888a100002cd9ed",
+                "installed": true,
+                "lowBattery": false,
+                "name": "Discharge Sensor",
+                "online": true,
+                "sensorType": "supply air",
+                "temperature": 81.07
+            },
+            "remTempSensor3": {
+                "deviceId": "uei-temp3-6888a100002cd9ed",
+                "installed": false,
+                "lowBattery": false,
+                "name": "Averaging Sensor",
+                "online": false,
+                "sensorType": "indoor",
+                "temperature": 32.0
+            },
+            "setpointChangeCounter": 5,
+            "setpointChangePerLogicCount": 2,
+            "systemState": {
+                "autoModeOn": true,
+                "coolModeOn": false,
+                "fanModeOn": true,
+                "heatModeOn": false,
+                "occupied": false,
+                "overrideHospitalityLogicOn": false,
+                "systemStateOn": true
+            },
+            "systemStateChangeCounter": 3,
+            "systemStateChangePerLogicCount": 2,
+            "tempSource": {
+                "sensorSource": "remote"
+            }
+        },
+        "msRelativeHumidity": {
+            "maxMeasuredValue": 100.0,
+            "measuredValue": 31.19,
+            "minMeasuredValue": 0.0
+        }
+    }
+},
+{
+    "receiver": {
+        "current_date": "19.05.2025",
+        "error_status": 0,
+        "firmware_version": "1.07",
+        "hardware_version": "0.02",
+        "label_id": "8000020436",
+        "number_of_receivers": 2,
+        "number_of_repeaters": 0,
+        "serial_number": "8.000.020.436",
+        "start_date": "19.04.2016",
+        "system_time": "16:44:56"
+    },
+    "registered_temperature_modules": [
+        {
+            "battery_status": 100,
+            "device_id": "Temperature-gesySense-0000019728",
+            "device_name": "19728 Cooler",
+            "label_id": "19728",
+            "lower_temperature_limit": 0,
+            "measured_value": 568,
+            "measuring_time": "16:43:08",
+            "model_id": "P.W01101-2",
+            "serial_number": "0.000.019.728",
+            "signal_quality": 92,
+            "start_date": "00.00.2000",
+            "temperature": 42.224,
+            "transmission_quality": 100,
+            "upper_temperature_limit": 0
+        },
+        {
+            "battery_status": 100,
+            "device_id": "Temperature-gesySense-0000022602",
+            "device_name": "Kitchen Fridge",
+            "label_id": "22602",
+            "lower_temperature_limit": 0,
+            "measured_value": 593,
+            "measuring_time": "16:44:38",
+            "model_id": "P.W01101-2",
+            "serial_number": "0.000.022.602",
+            "signal_quality": 80,
+            "start_date": "00.00.2000",
+            "temperature": 42.674,
+            "transmission_quality": 100,
+            "upper_temperature_limit": 0
+        }
+    ],
+    "repeaters": [],
+    "unregistered_modules": [],
+    "unregistered_repeaters": []
+},
+{
+    "name": "Refrigeration-31-20002330",
+    "modelId": "21263",
+    "modbusAddress": 31,
+    "mqttTopic": "ke2",
+    "deviceId": "Refrigeration-31-20002330",
+    "deviceName": "Cooler1",
+    "deviceType": "Refrigeration",
+    "timerInterval_seconds": 60,
+    "gatewayId": "GW-20002330"
+},
+{
+    "name": "gesySense",
+    "modelId": "P.W01211",
+    "modbusAddress": 1,
+    "mqttTopic": "gesySense",
+    "deviceId": "8000020436",
+    "deviceName": "Jake's Lab Receiver",
+    "deviceType": "Temperature-gesySense",
+    "timerInterval_seconds": 60,
+    "gatewayId": "GW-20002330"
+},
+{
+    "name": "Lighting-21-20002330",
+    "modelId": "CONMOD1.0-ZG",
+    "modbusAddress": 21,
+    "deviceId": "Lighting-21-20002330",
+    "deviceName": "Lighting-21-20002330",
+    "deviceType": "Lighting",
+    "timerInterval_seconds": 60,
+    "gatewayId": "GW-20002330",
+    "zoneProfile": {
+        "zone_id_1": {
+            "id": "Lighting-21-20002330_zone_id_1",
+            "name": "kitchen",
+            "is_enabled": true
+        },
+        "zone_id_2": {
+            "id": "Lighting-21-20002330_zone_id_2",
+            "name": "living room",
+            "is_enabled": true
+        },
+        "zone_id_3": {
+            "name": "bathroom",
+            "id": "Lighting-21-20002330_zone_id_3",
+            "is_enabled": true
+        },
+        "zone_id_4": {
+            "id": "Lighting-21-20002330_zone_id_4",
+            "name": "bedroom",
+            "is_enabled": true
+        },
+        "zone_id_5": {
+            "id": "Lighting-21-20002330_zone_id_5",
+            "name": "garage",
+            "is_enabled": true
+        },
+        "zone_id_6": {
+            "id": "Lighting-21-20002330_zone_id_6",
+            "is_enabled": true
+        },
+        "zone_id_7": {
+            "id": "Lighting-21-20002330_zone_id_7",
+            "is_enabled": true
+        },
+        "zone_id_8": {
+            "id": "Lighting-21-20002330_zone_id_8",
+            "is_enabled": true
+        }
+    }
+},
+{
+    "name": "wattNode",
+    "location": "Training Center ",
+    "modelId": "WNC-3Y-208-MB",
+    "modbusAddress": 50,
+    "mqttTopic": "wattNode",
+    "deviceId": "Wattnode-50-20002326",
+    "deviceName": "2016-05-03",
+    "deviceType": "Energy",
+    "timerInterval_seconds": 60,
+    "gatewayId": "GW-20002326"
+}
+{
+    "link_quality": 100,
+    "battery_percentage_remaining": 98,
+    "battery_voltage": 10,
+    "measure_temperature_value": 72.5
+}

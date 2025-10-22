@@ -1,0 +1,7 @@
+iotconnect-sdk==1.0
+requests==2.26.0
+paho-mqtt==1.6.1
+jsonschema==4.4.0
+pytest==6.2.5
+ntplib==0.4.0
+jsonlib-python3==1.6.1

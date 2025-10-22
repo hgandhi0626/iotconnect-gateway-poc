@@ -1,0 +1,776 @@
+{
+    "name": "Gateway - Thermostat Device Template",
+    "code": "1000000005",
+    "authType": "2",
+    "messageVersion": "2.1",
+    "tag": "gateway",
+    "capability": "0",
+    "properties": {
+        "dataFrequency": "60",
+        "description": "Thermostat device template for IoTConnect platform",
+        "fileSupport": true
+    },
+    "attributes": [
+        {
+            "attributeColor": "",
+            "description": "hb - gateway specific heartbeat attributes",
+            "name": "hb",
+            "tag": "gateway",
+            "type": "object",
+            "unit": "",
+            "childs": [
+                {
+                    "attributeColor": "",
+                    "description": "network address information - ipv4",
+                    "name": "net_address_ip_v4",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "network address information - ipv6",
+                    "name": "net_address_ip_v6",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hostname - hostname of the host machine",
+                    "name": "hostname",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "gateway_version - package version of gateway",
+                    "name": "gateway_version",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "ota_version - package version of ota",
+                    "name": "ota_version",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "gateway configured status",
+                    "name": "configured",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "MyPi devices only : unique id",
+                    "name": "fixed_id",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "MyPi devices only : ID that is supposed to match label on MyPi chassis.",
+                    "name": "serial_id",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "MAC address for sending device.",
+                    "name": "mac_address",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "config file download status",
+                    "name": "download_config_success",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "firmware file download status",
+                    "name": "download_firmware_success",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "ota status",
+                    "name": "ota_success",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "reason for sending heartbeat",
+                    "name": "reason",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "timestamp when current version of OTA ran for the first time.",
+                    "name": "ota_firmware_timestamp",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "timestamp when current version of Gateway ran for the first time.",
+                    "name": "gateway_firmware_timestamp",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "timestamp when gateway started.",
+                    "name": "gateway_start_timestamp",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "timestamp when gateway stopped.",
+                    "name": "gateway_stop_timestamp",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "timestamp when config file was installed.",
+                    "name": "config_file_timestamp",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "True if gateway was installed and rebooted, otherwise false.",
+                    "name": "gateway_reboot_success",
+                    "type": "boolean",
+                    "unit": ""
+                }
+            ]
+        },
+        {
+            "attributeColor": "",
+            "description": "Properties relating to ZigBee space/adapter",
+            "name": "zigbee_network",
+            "tag": "gateway",
+            "type": "object",
+            "unit": "",
+            "childs": [
+                {
+                    "attributeColor": "",
+                    "description": "ZigBee network channel",
+                    "name": "channel",
+                    "type": "integer",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "ZigBee network extended PAN ID",
+                    "name": "extended_pan_id",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "ZigBee network PAN ID",
+                    "name": "pan_id",
+                    "type": "decimal",
+                    "unit": ""
+                }
+            ]
+        },
+        {
+            "attributeColor": "",
+            "description": "Zigbee Device Data",
+            "name": "zigbee_devices",
+            "tag": "gateway",
+            "type": "object",
+            "unit": "",
+            "childs": [
+                {
+                    "attributeColor": "",
+                    "description": "mac address of ZigBee device",
+                    "name": "ieee_address",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "If true, interview for joining is done.",
+                    "name": "interview_completed",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "If true, device is being interviewed for joining.",
+                    "name": "interviewing",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "If true, Zigbee2MQTT supports the device.",
+                    "name": "supported",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "state of the device - online/offline",
+                    "name": "state",
+                    "type": "string",
+                    "unit": ""
+                }
+            ]
+        },
+        {
+            "attributeColor": "",
+            "description": "genBasic - general information about the device",
+            "name": "genBasic",
+            "tag": "thermostat",
+            "type": "object",
+            "unit": "",
+            "childs": [
+                {
+                    "attributeColor": "",
+                    "description": "app version of the device",
+                    "name": "appVersion",
+                    "type": "decimal",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "date code of the device",
+                    "name": "dateCode",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hardware version of the device",
+                    "name": "hwVersion",
+                    "type": "decimal",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "manufacturer name of the device",
+                    "name": "manufacturerName",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "model identifier of the device",
+                    "name": "modelId",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "primary power source of the device",
+                    "name": "powerSource_primary",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "whether device has secondary power source",
+                    "name": "powerSource_secondary",
+                    "type": "boolean",
+                    "unit": "",
+                    "childs": []
+                },
+                {
+                    "attributeColor": "",
+                    "description": "stack version of the device",
+                    "name": "stackVersion",
+                    "type": "decimal",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "ZCL version of the device",
+                    "name": "zclVersion",
+                    "type": "decimal",
+                    "unit": ""
+                }
+            ]
+        },
+        {
+            "attributeColor": "",
+            "description": "hvacFanCtrl - fan control information",
+            "name": "hvacFanCtrl",
+            "tag": "thermostat",
+            "type": "object",
+            "unit": "",
+            "childs": [
+                {
+                    "attributeColor": "",
+                    "description": "current speed of fan",
+                    "name": "fanMode",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "possible fan speeds",
+                    "name": "fanModeSequence",
+                    "type": "string",
+                    "unit": ""
+                }
+            ]
+        },
+        {
+            "attributeColor": "",
+            "description": "hvacThermostat - setpoints and modes",
+            "name": "hvacThermostat",
+            "tag": "thermostat",
+            "type": "object",
+            "unit": "",
+            "childs": [
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - absMaxCoolSetpointLimit",
+                    "name": "absMaxCoolSetpointLimit",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - absMaxHeatSetpointLimit",
+                    "name": "absMaxHeatSetpointLimit",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - absMinCoolSetpointLimit",
+                    "name": "absMinCoolSetpointLimit",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - absMinHeatSetpointLimit",
+                    "name": "absMinHeatSetpointLimit",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - control sequence of operation",
+                    "name": "controlSequenceOfOperation",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - current temperature measured by thermostat",
+                    "name": "localTemperature",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - maxCoolSetpointLimit",
+                    "name": "maxCoolSetpointLimit",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - maxHeatSetpointLimit",
+                    "name": "maxHeatSetpointLimit",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - minCoolSetpointLimit",
+                    "name": "minCoolSetpointLimit",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - minHeatSetpointLimit",
+                    "name": "minHeatSetpointLimit",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - minSetpointDeadBand",
+                    "name": "minSetpointDeadBand",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - occupancy",
+                    "name": "occupancy",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - occupiedCoolingSetpoint",
+                    "name": "occupiedCoolingSetpoint",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - occupiedHeatingSetpoint",
+                    "name": "occupiedHeatingSetpoint",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - Thermostat running mode",
+                    "name": "runningMode",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - running_state - cool2ndStageStateOn",
+                    "name": "runningState_cool2ndStageStateOn",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - running_state - coolStateOn",
+                    "name": "runningState_coolStateOn",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - running_state - fan2ndStageStateOn",
+                    "name": "runningState_fan2ndStageStateOn",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - running_state - fan3rdStageStateOn",
+                    "name": "runningState_fan3rdStageStateOn",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - running_state - fanStateOn",
+                    "name": "runningState_fanStateOn",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - running_state - heat2ndStageStateOn",
+                    "name": "runningState_heat2ndStageStateOn",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - running_state - heatStateOn",
+                    "name": "runningState_heatStateOn",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - system mode",
+                    "name": "systemMode",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - unoccupiedCoolingSetpoint",
+                    "name": "unoccupiedCoolingSetpoint",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - unoccupiedHeatingSetpoint",
+                    "name": "unoccupiedHeatingSetpoint",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - programingOperMode",
+                    "name": "programingOperMode_auto_recovery_mode",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - programingOperMode",
+                    "name": "programingOperMode_economy_energy_star_mode",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - programingOperMode",
+                    "name": "programingOperMode_mode",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - system type configuration - coolingSystemStage",
+                    "name": "systemTypeConfig_coolingSystemStage",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - system type configuration - heatingFuelSource",
+                    "name": "systemTypeConfig_heatingFuelSource",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - system type configuration - heatingSystemStage",
+                    "name": "systemTypeConfig_heatingSystemStage",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - system type configuration - heatingSystemType",
+                    "name": "systemTypeConfig_heatingSystemType",
+                    "type": "string",
+                    "unit": ""
+                }
+            ]
+        },
+        {
+            "attributeColor": "",
+            "description": "hvacUserInterfaceCfg - user interface configuration",
+            "name": "occupied_heating_setphvacUserInterfaceCfgoint",
+            "tag": "thermostat",
+            "type": "object",
+            "unit": "",
+            "childs": [
+                {
+                    "attributeColor": "",
+                    "description": "keyupad lockout status",
+                    "name": "keypadLockout",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "display mode of temperature",
+                    "name": "tempDisplayMode",
+                    "type": "string",
+                    "unit": ""
+                }
+            ]
+        },
+        {
+            "attributeColor": "",
+            "description": "link quality of the device",
+            "name": "linkquality",
+            "tag": "thermostat",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "msRelativeHumidity - relative humidity",
+            "name": "relative_humidity",
+            "tag": "thermostat",
+            "type": "object",
+            "unit": "",
+            "childs": [
+                {
+                    "attributeColor": "",
+                    "description": "max humidity measured by thermostat",
+                    "name": "maxMeasuredValue",
+                    "type": "decimal",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "humidity measured by thermostat",
+                    "name": "measuredValue",
+                    "type": "decimal",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "min humidity measured by thermostat",
+                    "name": "minMeasuredValue",
+                    "type": "decimal",
+                    "unit": ""
+                }
+            ]
+        },
+        {
+            "attributeColor": "",
+            "description": "msOccupancySensing - occupancy sensing",
+            "name": "msOccupancySensing",
+            "tag": "thermostat",
+            "type": "object",
+            "unit": "",
+            "childs": [
+                {
+                    "attributeColor": "",
+                    "description": "occupancy detected by thermostat",
+                    "name": "occupancy",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "type of occupancy sensor",
+                    "name": "occupancySensorType",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "PIR to ultrasonic delay in seconds",
+                    "name": "pirOToUDelay",
+                    "type": "decimal",
+                    "unit": "seconds"
+                }
+            ]
+        },
+        {
+            "attributeColor": "",
+            "description": "local schedule active state",
+            "name": "schedule_active",
+            "tag": "thermostat",
+            "type": "boolean",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "manufacture specific - UEI",
+            "name": "manuSpecificUniversalElectronics",
+            "tag": "thermostat",
+            "type": "object",
+            "unit": "",
+            "childs": [
+                {
+                    "attributeColor": "",
+                    "description": "uei remote temperature sensor - temperature",
+                    "name": "temperature",
+                    "type": "decimal",
+                    "unit": "Fahrenheit",
+                    "childs": []
+                },
+                {
+                    "attributeColor": "",
+                    "description": "low battery flag true=on false=off",
+                    "name": "lowBattery",
+                    "type": "boolean",
+                    "unit": "",
+                    "childs": []
+                },
+                {
+                    "attributeColor": "",
+                    "description": "installation status true=installed false=not-installed",
+                    "name": "installed",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "current status - true=online false=offline",
+                    "name": "online",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "sensor type",
+                    "name": "sensorType",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "system state - auto mode",
+                    "name": "systemState_autoModeOn",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "system state - cool mode",
+                    "name": "systemState_coolModeOn",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "system state - fan mode",
+                    "name": "systemState_fanModeOn",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "system state - heat mode",
+                    "name": "systemState_heatModeOn",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "system state - occupied mode",
+                    "name": "systemState_occupied",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "system state - overrideHospitalityLogicOn mode",
+                    "name": "systemState_overrideHospitalityLogicOn",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "system state - systemStat mode",
+                    "name": "systemState_systemStateOn",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "tempSource - sensorSource",
+                    "name": "tempSource_sensorSource",
+                    "type": "string",
+                    "unit": ""
+                }
+            ]
+        }
+    ],
+    "settings": [],
+    "commands": [],
+    "_meta": {
+        "version": "2.0"
+    }
+}

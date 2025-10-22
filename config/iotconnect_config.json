@@ -1,0 +1,14 @@
+{
+  "CPID": "0534592e2d0b4ec3991ef9846363e51b",
+  "Environment": "poc",
+  "Platform": "aws",
+  "DiscoveryURL": "https://awsdiscovery.iotconnect.io",
+  "DeviceBroker": "a110maijzy82z6-ats.iot.us-east-1.amazonaws.com",
+  "MessageVersion": "2.1",
+  "AuthType": "3",
+  "CertificateFiles": {
+    "RootCA": "certs/AmazonRootCA1.cer",
+    "DeviceCertificate": "certs/cert_Gateway-v3.crt",
+    "PrivateKey": "certs/pk_Gateway-v3.pem"
+  }
+}

@@ -1,0 +1,1814 @@
+{
+    "name": "Axsys Device Template",
+    "code": "CODEAXSYS",
+    "authType": "2",
+    "messageVersion": "2.1",
+    "tag": "gateway",
+    "capability": "1",
+    "properties": {
+        "dataFrequency": "60",
+        "description": "Gateway device template for IoTConnect platform",
+        "fileSupport": true
+    },
+    "attributes": [
+        {
+            "attributeColor": "",
+            "description": "hb - gateway specific heartbeat attributes",
+            "name": "hb",
+            "tag": "gateway",
+            "type": "object",
+            "unit": "",
+            "childs": [
+                {
+                    "attributeColor": "",
+                    "description": "network address information - ipv4",
+                    "name": "net_address_ip_v4",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "network address information - ipv6",
+                    "name": "net_address_ip_v6",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hostname - hostname of the host machine",
+                    "name": "hostname",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "gateway_version - package version of gateway",
+                    "name": "gateway_version",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "ota_version - package version of ota",
+                    "name": "ota_version",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "gateway configured status",
+                    "name": "configured",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "MyPi devices only : unique id",
+                    "name": "fixed_id",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "MyPi devices only : ID that is supposed to match label on MyPi chassis.",
+                    "name": "serial_id",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "MAC address for sending device.",
+                    "name": "mac_address",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "config file download status",
+                    "name": "download_config_success",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "firmware file download status",
+                    "name": "download_firmware_success",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "ota status",
+                    "name": "ota_success",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "reason for sending heartbeat",
+                    "name": "reason",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "timestamp when current version of OTA ran for the first time.",
+                    "name": "ota_firmware_timestamp",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "timestamp when current version of Gateway ran for the first time.",
+                    "name": "gateway_firmware_timestamp",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "timestamp when gateway started.",
+                    "name": "gateway_start_timestamp",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "timestamp when gateway stopped.",
+                    "name": "gateway_stop_timestamp",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "timestamp when config file was installed.",
+                    "name": "config_file_timestamp",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "True if gateway was installed and rebooted, otherwise false.",
+                    "name": "gateway_reboot_success",
+                    "type": "boolean",
+                    "unit": ""
+                }
+            ]
+        },
+        {
+            "attributeColor": "",
+            "description": "Properties relating to ZigBee space/adapter",
+            "name": "zigbee_network",
+            "tag": "gateway",
+            "type": "object",
+            "unit": "",
+            "childs": [
+                {
+                    "attributeColor": "",
+                    "description": "ZigBee network channel",
+                    "name": "channel",
+                    "type": "integer",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "ZigBee network extended PAN ID",
+                    "name": "extended_pan_id",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "ZigBee network PAN ID",
+                    "name": "pan_id",
+                    "type": "decimal",
+                    "unit": ""
+                }
+            ]
+        },
+        {
+            "attributeColor": "",
+            "description": "Zigbee Device Data",
+            "name": "zigbee_devices",
+            "tag": "gateway",
+            "type": "object",
+            "unit": "",
+            "childs": [
+                {
+                    "attributeColor": "",
+                    "description": "mac address of ZigBee device",
+                    "name": "ieee_address",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "If true, interview for joining is done.",
+                    "name": "interview_completed",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "If true, device is being interviewed for joining.",
+                    "name": "interviewing",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "If true, Zigbee2MQTT supports the device.",
+                    "name": "supported",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "state of the device - online/offline",
+                    "name": "state",
+                    "type": "string",
+                    "unit": ""
+                }
+            ]
+        },
+        {
+            "attributeColor": "",
+            "description": "genBasic - general information about the device",
+            "name": "genBasic",
+            "tag": "thermostat",
+            "type": "object",
+            "unit": "",
+            "childs": [
+                {
+                    "attributeColor": "",
+                    "description": "app version of the device",
+                    "name": "appVersion",
+                    "type": "decimal",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "date code of the device",
+                    "name": "dateCode",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hardware version of the device",
+                    "name": "hwVersion",
+                    "type": "decimal",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "manufacturer name of the device",
+                    "name": "manufacturerName",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "model identifier of the device",
+                    "name": "modelId",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "primary power source of the device",
+                    "name": "powerSource_primary",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "whether device has secondary power source",
+                    "name": "powerSource_secondary",
+                    "type": "boolean",
+                    "unit": "",
+                    "childs": []
+                },
+                {
+                    "attributeColor": "",
+                    "description": "stack version of the device",
+                    "name": "stackVersion",
+                    "type": "decimal",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "ZCL version of the device",
+                    "name": "zclVersion",
+                    "type": "decimal",
+                    "unit": ""
+                }
+            ]
+        },
+        {
+            "attributeColor": "",
+            "description": "hvacFanCtrl - fan control information",
+            "name": "hvacFanCtrl",
+            "tag": "thermostat",
+            "type": "object",
+            "unit": "",
+            "childs": [
+                {
+                    "attributeColor": "",
+                    "description": "current speed of fan",
+                    "name": "fanMode",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "possible fan speeds",
+                    "name": "fanModeSequence",
+                    "type": "string",
+                    "unit": ""
+                }
+            ]
+        },
+        {
+            "attributeColor": "",
+            "description": "hvacThermostat - setpoints and modes",
+            "name": "hvacThermostat",
+            "tag": "thermostat",
+            "type": "object",
+            "unit": "",
+            "childs": [
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - absMaxCoolSetpointLimit",
+                    "name": "absMaxCoolSetpointLimit",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - absMaxHeatSetpointLimit",
+                    "name": "absMaxHeatSetpointLimit",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - absMinCoolSetpointLimit",
+                    "name": "absMinCoolSetpointLimit",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - absMinHeatSetpointLimit",
+                    "name": "absMinHeatSetpointLimit",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - control sequence of operation",
+                    "name": "controlSequenceOfOperation",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - current temperature measured by thermostat",
+                    "name": "localTemperature",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - maxCoolSetpointLimit",
+                    "name": "maxCoolSetpointLimit",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - maxHeatSetpointLimit",
+                    "name": "maxHeatSetpointLimit",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - minCoolSetpointLimit",
+                    "name": "minCoolSetpointLimit",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - minHeatSetpointLimit",
+                    "name": "minHeatSetpointLimit",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - minSetpointDeadBand",
+                    "name": "minSetpointDeadBand",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - occupancy",
+                    "name": "occupancy",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - occupiedCoolingSetpoint",
+                    "name": "occupiedCoolingSetpoint",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - occupiedHeatingSetpoint",
+                    "name": "occupiedHeatingSetpoint",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - Thermostat running mode",
+                    "name": "runningMode",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - running_state - cool2ndStageStateOn",
+                    "name": "runningState_cool2ndStageStateOn",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - running_state - coolStateOn",
+                    "name": "runningState_coolStateOn",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - running_state - fan2ndStageStateOn",
+                    "name": "runningState_fan2ndStageStateOn",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - running_state - fan3rdStageStateOn",
+                    "name": "runningState_fan3rdStageStateOn",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - running_state - fanStateOn",
+                    "name": "runningState_fanStateOn",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - running_state - heat2ndStageStateOn",
+                    "name": "runningState_heat2ndStageStateOn",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - running_state - heatStateOn",
+                    "name": "runningState_heatStateOn",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - system mode",
+                    "name": "systemMode",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - unoccupiedCoolingSetpoint",
+                    "name": "unoccupiedCoolingSetpoint",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - unoccupiedHeatingSetpoint",
+                    "name": "unoccupiedHeatingSetpoint",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - programingOperMode",
+                    "name": "programingOperMode_auto_recovery_mode",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - programingOperMode",
+                    "name": "programingOperMode_economy_energy_star_mode",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - programingOperMode",
+                    "name": "programingOperMode_mode",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - system type configuration - coolingSystemStage",
+                    "name": "systemTypeConfig_coolingSystemStage",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - system type configuration - heatingFuelSource",
+                    "name": "systemTypeConfig_heatingFuelSource",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - system type configuration - heatingSystemStage",
+                    "name": "systemTypeConfig_heatingSystemStage",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hvacThermostat - system type configuration - heatingSystemType",
+                    "name": "systemTypeConfig_heatingSystemType",
+                    "type": "string",
+                    "unit": ""
+                }
+            ]
+        },
+        {
+            "attributeColor": "",
+            "description": "hvacUserInterfaceCfg - user interface configuration",
+            "name": "occupied_heating_setphvacUserInterfaceCfgoint",
+            "tag": "thermostat",
+            "type": "object",
+            "unit": "",
+            "childs": [
+                {
+                    "attributeColor": "",
+                    "description": "keyupad lockout status",
+                    "name": "keypadLockout",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "display mode of temperature",
+                    "name": "tempDisplayMode",
+                    "type": "string",
+                    "unit": ""
+                }
+            ]
+        },
+        {
+            "attributeColor": "",
+            "description": "link quality of the device",
+            "name": "linkquality",
+            "tag": "thermostat",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "msRelativeHumidity - relative humidity",
+            "name": "relative_humidity",
+            "tag": "thermostat",
+            "type": "object",
+            "unit": "",
+            "childs": [
+                {
+                    "attributeColor": "",
+                    "description": "max humidity measured by thermostat",
+                    "name": "maxMeasuredValue",
+                    "type": "decimal",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "humidity measured by thermostat",
+                    "name": "measuredValue",
+                    "type": "decimal",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "min humidity measured by thermostat",
+                    "name": "minMeasuredValue",
+                    "type": "decimal",
+                    "unit": ""
+                }
+            ]
+        },
+        {
+            "attributeColor": "",
+            "description": "msOccupancySensing - occupancy sensing",
+            "name": "msOccupancySensing",
+            "tag": "thermostat",
+            "type": "object",
+            "unit": "",
+            "childs": [
+                {
+                    "attributeColor": "",
+                    "description": "occupancy detected by thermostat",
+                    "name": "occupancy",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "type of occupancy sensor",
+                    "name": "occupancySensorType",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "PIR to ultrasonic delay in seconds",
+                    "name": "pirOToUDelay",
+                    "type": "decimal",
+                    "unit": "seconds"
+                }
+            ]
+        },
+        {
+            "attributeColor": "",
+            "description": "local schedule active state",
+            "name": "schedule_active",
+            "tag": "thermostat",
+            "type": "boolean",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "manufacture specific cluster",
+            "name": "manuSpecificUniversalElectronics",
+            "tag": "thermostat",
+            "type": "object",
+            "unit": "",
+            "childs": [
+                {
+                    "attributeColor": "",
+                    "description": "system state - auto mode",
+                    "name": "systemState_autoModeOn",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "system state - cool mode",
+                    "name": "systemState_coolModeOn",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "system state - fan mode",
+                    "name": "systemState_fanModeOn",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "system state - heat mode",
+                    "name": "systemState_heatModeOn",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "system state - occupied mode",
+                    "name": "systemState_occupied",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "system state - overrideHospitalityLogicOn mode",
+                    "name": "systemState_overrideHospitalityLogicOn",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "system state - systemStat mode",
+                    "name": "systemState_systemStateOn",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "tempSource - sensorSource",
+                    "name": "tempSource_sensorSource",
+                    "type": "string",
+                    "unit": ""
+                }
+            ]
+        },
+        {
+            "attributeColor": "",
+            "description": "manufacture specific cluster",
+            "name": "manuSpecific_remote_temperature_sensor",
+            "tag": "thermostat",
+            "type": "object",
+            "unit": "",
+            "childs": [
+                {
+                    "attributeColor": "",
+                    "description": "uei remote temperature sensor - temperature",
+                    "name": "deviceId",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "uei remote temperature sensor - temperature",
+                    "name": "name",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "uei remote temperature sensor - temperature",
+                    "name": "temperature",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                },
+                {
+                    "attributeColor": "",
+                    "description": "low battery flag true=on false=off",
+                    "name": "lowBattery",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "installation status true=installed false=not-installed",
+                    "name": "installed",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "current status - true=online false=offline",
+                    "name": "online",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "sensor type",
+                    "name": "sensorType",
+                    "type": "string",
+                    "unit": ""
+                }
+            ]
+        },
+        {
+            "attributeColor": "",
+            "description": "receiver properties.  The receiver is the device connected to Modbus.",
+            "name": "receiver",
+            "tag": "gesysense",
+            "type": "object",
+            "unit": "",
+            "childs": [
+                {
+                    "attributeColor": "",
+                    "description": "serial number directly from receiver",
+                    "name": "serial_number",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "ID on the outside label of the sensor.",
+                    "name": "label_id",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "firmware version",
+                    "name": "firmware_version",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "hardware version",
+                    "name": "hardware_version",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "error status of the receiver",
+                    "name": "error_status",
+                    "type": "integer",
+                    "unit": ""
+                }
+            ]
+        },
+        {
+            "attributeColor": "",
+            "description": "properties of registered modules.",
+            "name": "registered_temperature_modules",
+            "tag": "temperature_gesysense",
+            "type": "object",
+            "unit": "",
+            "childs": [
+                {
+                    "attributeColor": "",
+                    "description": "model id of module",
+                    "name": "model_id",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "serial number directly from module",
+                    "name": "serial_number",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "ID on the outside label of the module.",
+                    "name": "label_id",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "signal quality of the module",
+                    "name": "signal_quality",
+                    "type": "integer",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "transmission quality of the module",
+                    "name": "transmission_quality",
+                    "type": "integer",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "battery status of the module",
+                    "name": "battery_status",
+                    "type": "integer",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "temperature if the module is a temperature module",
+                    "name": "temperature",
+                    "type": "decimal",
+                    "unit": "Fahrenheit"
+                }
+            ]
+        },
+        {
+            "attributeColor": "",
+            "description": "device model information",
+            "name": "wattnode_modbus_device_info",
+            "tag": "energy",
+            "type": "object",
+            "unit": "",
+            "childs": [
+                {
+                    "attributeColor": "",
+                    "description": "WattNode - Modbus firmware version",
+                    "name": "firmware_version",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "WattNode - Modbus model ID",
+                    "name": "model_id",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "WattNode - Modbus serial number",
+                    "name": "serial_number",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "WattNode - Modbus address",
+                    "name": "modbus_address",
+                    "type": "integer",
+                    "unit": ""
+                }
+            ]
+        },
+        {
+            "attributeColor": "",
+            "description": "Watt Node - Total net energy - units in kWh",
+            "name": "total_energy_sum",
+            "tag": "energy",
+            "type": "decimal",
+            "unit": "kWh"
+        },
+        {
+            "attributeColor": "",
+            "description": "Watt Node - Real power, sum of active phases",
+            "name": "power_sum",
+            "tag": "energy",
+            "type": "decimal",
+            "unit": "W"
+        },
+        {
+            "attributeColor": "",
+            "description": "Watt Node - CT Rated Current (all phases)",
+            "name": "ct_amps",
+            "tag": "energy",
+            "type": "integer",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "Watt Node - CT Rated Current, phase A",
+            "name": "ct_amps_a",
+            "tag": "energy",
+            "type": "integer",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "Watt Node - CT Rated Current, phase B",
+            "name": "ct_amps_b",
+            "tag": "energy",
+            "type": "integer",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "Watt Node - CT Rated Current, phase C",
+            "name": "ct_amps_c",
+            "tag": "energy",
+            "type": "integer",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "Watt Node - CT Directions (all CTs normal, some reversed, etc.)",
+            "name": "ct_directions",
+            "tag": "energy",
+            "type": "string",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "Watt Node - Phase angle adjustment, phase A (degrees)",
+            "name": "phase_adjust_a",
+            "tag": "energy",
+            "type": "integer",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "Watt Node - Phase angle adjustment, phase B (degrees)",
+            "name": "phase_adjust_b",
+            "tag": "energy",
+            "type": "integer",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "Watt Node - Phase angle adjustment, phase C (degrees)",
+            "name": "phase_adjust_c",
+            "tag": "energy",
+            "type": "integer",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "Watt Node - Write 1 to zero all resettable energy registers",
+            "name": "zero_energy",
+            "tag": "energy",
+            "type": "integer",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "Watt Node - Real power, phase A",
+            "name": "real_power_a",
+            "tag": "energy",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "Watt Node - Real power, phase B",
+            "name": "real_power_b",
+            "tag": "energy",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "Watt Node - Real power, phase C",
+            "name": "real_power_c",
+            "tag": "energy",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "Watt Node - RMS voltage, phase A to neutral",
+            "name": "voltage_a",
+            "tag": "energy",
+            "type": "decimal",
+            "unit": "V"
+        },
+        {
+            "attributeColor": "",
+            "description": "Watt Node - RMS voltage, phase B to neutral",
+            "name": "voltage_b",
+            "tag": "energy",
+            "type": "decimal",
+            "unit": "V"
+        },
+        {
+            "attributeColor": "",
+            "description": "Watt Node - RMS voltage, phase C to neutral",
+            "name": "voltage_c",
+            "tag": "energy",
+            "type": "decimal",
+            "unit": "V"
+        },
+        {
+            "attributeColor": "",
+            "description": "Watt Node - Average line-to-line voltage",
+            "name": "voltage_avg",
+            "tag": "energy",
+            "type": "decimal",
+            "unit": "V"
+        },
+        {
+            "attributeColor": "",
+            "description": "Zigbee link quality indicator, signal strength - range of values are [0,255] with 0 being the weakest",
+            "name": "link_quality",
+            "tag": "temperature_zigbee",
+            "type": "integer",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "lgenPowerCfg - remaining battery life - units in percentage",
+            "name": "battery_percentage_remaining",
+            "tag": "temperature_zigbee",
+            "type": "decimal",
+            "unit": "%"
+        },
+        {
+            "attributeColor": "",
+            "description": "genPowerCfg - current battery voltage - units of volts",
+            "name": "battery_voltage",
+            "tag": "temperature_zigbee",
+            "type": "decimal",
+            "unit": "V"
+        },
+        {
+            "attributeColor": "",
+            "description": "measured temperature - units of degrees Celsius",
+            "name": "measured_value",
+            "tag": "temperature_zigbee",
+            "type": "decimal",
+            "unit": "Fahrenheit"
+        },
+        {
+            "attributeColor": "",
+            "description": "device model information",
+            "name": "lighting_modbus_device_info",
+            "tag": "lighting",
+            "type": "object",
+            "unit": "",
+            "childs": [
+                {
+                    "attributeColor": "",
+                    "description": "Lighting Controller - version",
+                    "name": "version",
+                    "type": "decimal",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "Lighting Controller - Modbus model ID",
+                    "name": "model_id",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "Lighting Controller - Modbus firmware version",
+                    "name": "firmware_version",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "Lighting Controller - modbus address",
+                    "name": "modbus_address",
+                    "type": "integer",
+                    "unit": ""
+                }
+            ]
+        },
+        {
+            "attributeColor": "",
+            "description": "zone id information",
+            "name": "zone_id_def",
+            "tag": "lighting",
+            "type": "object",
+            "unit": "",
+            "childs": [
+                {
+                    "attributeColor": "",
+                    "description": "user-defined id for zone",
+                    "name": "id",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "name for zone",
+                    "name": "name",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "if true, the zone is used by eView",
+                    "name": "is_enabled",
+                    "type": "boolean",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "relay state of the zone - on/off",
+                    "name": "relay_value",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "schedule active state - true/false",
+                    "name": "schedule_active",
+                    "type": "boolean",
+                    "unit": ""
+                }
+            ]
+        },
+        {
+            "attributeColor": "",
+            "description": "device model information",
+            "name": "ke2_modbus_device_info",
+            "tag": "refrigeration",
+            "type": "object",
+            "unit": "",
+            "childs": [
+                {
+                    "attributeColor": "",
+                    "description": "KE2 - Modbus firmware version",
+                    "name": "firmware_version",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "KE2 - Modbus model ID",
+                    "name": "model_id",
+                    "type": "string",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "KE2 - Modbus firmware part number",
+                    "name": "firmware_part_number",
+                    "type": "decimal",
+                    "unit": ""
+                },
+                {
+                    "attributeColor": "",
+                    "description": "KE2 - Modbus address",
+                    "name": "modbus_address",
+                    "type": "integer",
+                    "unit": ""
+                }
+            ]
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Modbus address of the controller",
+            "name": "controller_modbus_address",
+            "tag": "refrigeration",
+            "type": "string",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Type of the third input",
+            "name": "type_of_3rd_input",
+            "tag": "refrigeration",
+            "type": "string",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Fan mode during refrigeration",
+            "name": "fan_mode_during_refrigeration_mode",
+            "tag": "refrigeration",
+            "type": "string",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Minimum run time of the compressor",
+            "name": "minimum_compressor_run_time",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Minimum off time of the compressor",
+            "name": "minimum_compressor_off_time",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Temperature differential settings - unit in Fahrenheit",
+            "name": "temperature_differential",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": "Fahrenheit"
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Duration of defrost cycle",
+            "name": "defrost_time",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Active state of the third digital input",
+            "name": "digital_input_active_state_for_3rd_input",
+            "tag": "refrigeration",
+            "type": "string",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Number of defrost cycles per day",
+            "name": "number_of_defrosts_per_day",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Type of defrost mechanism",
+            "name": "type_of_defrost",
+            "tag": "refrigeration",
+            "type": "string",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - target setpoint - units in Fahrenheit",
+            "name": "temperature_setpoint",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": "Fahrenheit"
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Drain time after defrost units in Minutes",
+            "name": "drain_time",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Delay before high and low temperature alarms are triggered",
+            "name": "high_and_low_alarm_delay",
+            "tag": "refrigeration",
+            "type": "integer",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Offset for low temperature alarm trigger - units in Fahrenheit",
+            "name": "low_alarm_temperature_offset",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Offset for high temperature alarm trigger - units in Fahrenheit",
+            "name": "high_alarm_temperature_offset",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Type of initiation for defrost - no unit",
+            "name": "defrost_initiate_type",
+            "tag": "refrigeration",
+            "type": "integer",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Type of the fourth input - no unit",
+            "name": "type_of_4th_input",
+            "tag": "refrigeration",
+            "type": "string",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Active state of the fourth digital input",
+            "name": "digital_input_active_state_for_4th_input",
+            "tag": "refrigeration",
+            "type": "string",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Second room temperature set point - unit in Fahrenheit",
+            "name": "second_room_temperature_set_point",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": "Fahrenheit"
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Start time of the first defrost",
+            "name": "start_time_of_defrost_1",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Start time of the second defrost",
+            "name": "start_time_of_defrost_2",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Start time of the third defrost",
+            "name": "start_time_of_defrost_3",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Start time of the fourth defrost",
+            "name": "start_time_of_defrost_4",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Start time of the fifth defrost",
+            "name": "start_time_of_defrost_5",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Start time of the sixth defrost",
+            "name": "start_time_of_defrost_6",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Start time of the seventh defrost",
+            "name": "start_time_of_defrost_7",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Start time of the eighth defrost",
+            "name": "start_time_of_defrost_8",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Start time of the ninth defrost",
+            "name": "start_time_of_defrost_9",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Start time of the tenth defrost",
+            "name": "start_time_of_defrost_10",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Start time of the eleventh defrost",
+            "name": "start_time_of_defrost_11",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Start Time of Defrost 12 - units in minutes",
+            "name": "start_time_of_defrost_12",
+            "tag": "refrigeration",
+            "type": "integer",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Current time of day",
+            "name": "time_of_day",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Extreme differential settings - unit in Fahrenheit",
+            "name": "extreme_differential",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Mode of the defrost heater",
+            "name": "defrost_heater_mode",
+            "tag": "refrigeration",
+            "type": "integer",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Defrost parameters",
+            "name": "defrost_parameter",
+            "tag": "refrigeration",
+            "type": "integer",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Pump down time during defrost",
+            "name": "defrost_pump_down_time",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - State of fan during defrost",
+            "name": "fan_state_during_defrost",
+            "tag": "refrigeration",
+            "type": "string",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Maximum delay time for fan",
+            "name": "max_fan_delay_time",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Temperature at which fan delay is triggered - unit in Fahrenheit",
+            "name": "fan_delay_temperature",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Temperature setpoint that terminates defrost - unit in Fahrenheit",
+            "name": "defrost_termination_temperature_setpoint",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": "Fahrenheit"
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - alarm",
+            "name": "alarms",
+            "tag": "refrigeration",
+            "type": "string",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - coil temperature - units in Fahrenheit",
+            "name": "coil_temperature_1",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": "Fahrenheit"
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - coil temperature - units in Fahrenheit",
+            "name": "coil_temperature_2",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": "Fahrenheit"
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Room temperature - unis in Fahrenheit",
+            "name": "current_temperature",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": "Fahrenheit"
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - compressor relay",
+            "name": "compressor_relay",
+            "tag": "refrigeration",
+            "type": "string",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - defrost relay",
+            "name": "defrost_relay",
+            "tag": "refrigeration",
+            "type": "string",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - fan relay",
+            "name": "fan_relay",
+            "tag": "refrigeration",
+            "type": "string",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - system status",
+            "name": "system_status",
+            "tag": "refrigeration",
+            "type": "string",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - High Alarm Offset - units in Fahrenheit",
+            "name": "high_alarm_offset",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": "Fahrenheit"
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Low Alarm Offset - units in Fahrenheit",
+            "name": "low_alarm_offset",
+            "tag": "refrigeration",
+            "type": "decimal",
+            "unit": "Fahrenheit"
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Minimum Comp Off Time",
+            "name": "minimum_comp_off_time",
+            "tag": "refrigeration",
+            "type": "integer",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Minimum Comp Run Time",
+            "name": "minimum_comp_run_time",
+            "tag": "refrigeration",
+            "type": "integer",
+            "unit": ""
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Room Temperature - units in Fahrenheit",
+            "name": "room_temp",
+            "tag": "refrigeration",
+            "type": "integer",
+            "unit": "Fahrenheit"
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Coil Temperature - units in Fahrenheit",
+            "name": "coil_temp",
+            "tag": "refrigeration",
+            "type": "integer",
+            "unit": "Fahrenheit"
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Temp 3 Temp - units in Fahrenheit",
+            "name": "temp_3_temp",
+            "tag": "refrigeration",
+            "type": "integer",
+            "unit": "Fahrenheit"
+        },
+        {
+            "attributeColor": "",
+            "description": "KE2 - Temp 4 temp - units in Fahrenheit",
+            "name": "temp_4_temp",
+            "tag": "refrigeration",
+            "type": "integer",
+            "unit": "Fahrenheit"
+        }
+    ],
+    "settings": [],
+    "commands": [
+        {
+            "command": "change_occupied_heating_setpoint",
+            "isOTACommand": false,
+            "name": "occupiedHeatingSetpoint",
+            "requiredAck": true,
+            "requiredParam": true,
+            "tag": "thermostat"
+        },
+        {
+            "command": "change_occupied_cooling_setpoint",
+            "isOTACommand": false,
+            "name": "occupiedCoolingSetpoint",
+            "requiredAck": true,
+            "requiredParam": true,
+            "tag": "thermostat"
+        },
+        {
+            "command": "change_unoccupied_heating_setpoint",
+            "isOTACommand": false,
+            "name": "unoccupiedHeatingSetpoint",
+            "requiredAck": true,
+            "requiredParam": true,
+            "tag": "thermostat"
+        },
+        {
+            "command": "change_unoccupied_cooling_setpoint",
+            "isOTACommand": false,
+            "name": "unoccupiedCoolingSetpoint",
+            "requiredAck": true,
+            "requiredParam": true,
+            "tag": "thermostat"
+        },
+        {
+            "command": "change_system_mode",
+            "isOTACommand": false,
+            "name": "systemMode",
+            "requiredAck": true,
+            "requiredParam": true,
+            "tag": "thermostat"
+        },
+        {
+            "command": "change_keypad_lockout",
+            "isOTACommand": false,
+            "name": "keypadLockout",
+            "requiredAck": true,
+            "requiredParam": true,
+            "tag": "thermostat"
+        },
+        {
+            "command": "change_occupancy",
+            "isOTACommand": false,
+            "name": "occupancy",
+            "requiredAck": true,
+            "requiredParam": true,
+            "tag": "thermostat"
+        },
+        {
+            "command": "change_economy_mode",
+            "isOTACommand": false,
+            "name": "economyMode",
+            "requiredAck": true,
+            "requiredParam": true,
+            "tag": "thermostat"
+        },
+        {
+            "command": "change_zone1_relay_value",
+            "isOTACommand": false,
+            "name": "zone1RelayValue",
+            "requiredAck": true,
+            "requiredParam": true,
+            "tag": "lighting"
+        },
+        {
+            "command": "change_zone2_relay_value",
+            "isOTACommand": false,
+            "name": "zone2RelayValue",
+            "requiredAck": true,
+            "requiredParam": true,
+            "tag": "lighting"
+        },
+        {
+            "command": "change_zone3_relay_value",
+            "isOTACommand": false,
+            "name": "zone3RelayValue",
+            "requiredAck": true,
+            "requiredParam": true,
+            "tag": "lighting"
+        },
+        {
+            "command": "change_zone4_relay_value",
+            "isOTACommand": false,
+            "name": "zone4RelayValue",
+            "requiredAck": true,
+            "requiredParam": true,
+            "tag": "lighting"
+        },
+        {
+            "command": "change_zone5_relay_value",
+            "isOTACommand": false,
+            "name": "zone5RelayValue",
+            "requiredAck": true,
+            "requiredParam": true,
+            "tag": "lighting"
+        },
+        {
+            "command": "change_zone6_relay_value",
+            "isOTACommand": false,
+            "name": "zone6RelayValue",
+            "requiredAck": true,
+            "requiredParam": true,
+            "tag": "lighting"
+        },
+        {
+            "command": "change_zone7_relay_value",
+            "isOTACommand": false,
+            "name": "zone7RelayValue",
+            "requiredAck": true,
+            "requiredParam": true,
+            "tag": "lighting"
+        },
+        {
+            "command": "change_zone8_relay_value",
+            "isOTACommand": false,
+            "name": "zone8RelayValue",
+            "requiredAck": true,
+            "requiredParam": true,
+            "tag": "lighting"
+        }
+    ],
+    "_meta": {
+        "version": "2.0"
+    }
+}

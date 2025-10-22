@@ -1,0 +1,151 @@
+{
+    "_meta": {
+        "at": 3,
+        "v": 2.1
+    },
+    "gateway": {
+        "items": [
+            {
+                "name": "Gateway-v3",
+                "uniqueId": "GW-20001448",
+                "items": [
+                    {
+                        "name": "Stat-1",
+                        "uniqueId": "Thermostat-504112112200301",
+                        "tag": "thermostat"
+                    },
+                    {
+                        "name": "Stat-2",
+                        "uniqueId": "Thermostat-504112112200204",
+                        "tag": "thermostat"
+                    },
+                    {
+                        "name": "Stat-3",
+                        "uniqueId": "Thermostat-504112302130096",
+                        "tag": "thermostat"
+                    },
+                    {
+                        "name": "Stat-4",
+                        "uniqueId": "Thermostat-504112302130105",
+                        "tag": "thermostat"
+                    },
+                    {
+                        "name": "Stat-5",
+                        "uniqueId": "Thermostat-504112302130456",
+                        "tag": "thermostat"
+                    },
+                    {
+                        "name": "Stat-6",
+                        "uniqueId": "Thermostat-504112302130127",
+                        "tag": "thermostat"
+                    },
+                    {
+                        "name": "Stat-7",
+                        "uniqueId": "Thermostat-504112302130232",
+                        "tag": "thermostat"
+                    },
+                    {
+                        "name": "Stat-8",
+                        "uniqueId": "Thermostat-504112302130372",
+                        "tag": "thermostat"
+                    },
+                    {
+                        "name": "Stat-9",
+                        "uniqueId": "Thermostat-504112302130017",
+                        "tag": "thermostat"
+                    },
+                    {
+                        "name": "Stat-10",
+                        "uniqueId": "Thermostat-504112302130369",
+                        "tag": "thermostat"
+                    },
+                    {
+                        "name": "ZigBee-1",
+                        "uniqueId": "Temperature-ZigBee-317M12303210501",
+                        "tag": "temperature_zigbee"
+                    },
+                    {
+                        "name": "ZigBee-2",
+                        "uniqueId": "Temperature-ZigBee-317M12303210685",
+                        "tag": "temperature_zigbee"
+                    },
+                    {
+                        "name": "ZigBee-3",
+                        "uniqueId": "Temperature-ZigBee-317M12303210764",
+                        "tag": "temperature_zigbee"
+                    },
+                    {
+                        "name": "ZigBee-4",
+                        "uniqueId": "Temperature-ZigBee-317M12303210702",
+                        "tag": "temperature_zigbee"
+                    },
+                    {
+                        "name": "ZigBee-5",
+                        "uniqueId": "Temperature-ZigBee-317M12303210597",
+                        "tag": "temperature_zigbee"
+                    },
+                    {
+                        "name": "ZigBee-6",
+                        "uniqueId": "Temperature-ZigBee-317M12303210419",
+                        "tag": "temperature_zigbee"
+                    },
+                    {
+                        "name": "ZigBee-7",
+                        "uniqueId": "Temperature-ZigBee-317M12303210749",
+                        "tag": "temperature_zigbee"
+                    },
+                    {
+                        "name": "ZigBee-8",
+                        "uniqueId": "Temperature-ZigBee-317M12211280468",
+                        "tag": "temperature_zigbee"
+                    },
+                    {
+                        "name": "ZigBee-9",
+                        "uniqueId": "Temperature-ZigBee-317M12303210548",
+                        "tag": "temperature_zigbee"
+                    },
+                    {
+                        "name": "ZigBee-10",
+                        "uniqueId": "Temperature-ZigBee-317M12303210380",
+                        "tag": "temperature_zigbee"
+                    },
+                    {
+                        "name": "ke2",
+                        "uniqueId": "ENG-300-707-001",
+                        "tag": "refrigeration"
+                    },
+                    {
+                        "name": "gesySense",
+                        "uniqueId": "8000020280",
+                        "tag": "gesysense"
+                    },
+                    {
+                        "name": "wattNode",
+                        "uniqueId": "ENG-300-707-004",
+                        "tag": "energy"
+                    },
+                    {
+                        "name": "lightingController",
+                        "uniqueId": "ENG-300-707-005-20001448",
+                        "tag": "lighting"
+                    },
+                    {
+                        "name": "Thermo-sensor-1",
+                        "uniqueId": "Temperature-gesySense-0000022533",
+                        "tag": "temperature_gesysense"
+                    },
+                    {
+                        "name": "Thermo-sensor-2",
+                        "uniqueId": "Temperature-gesySense-0000021055",
+                        "tag": "temperature_gesysense"
+                    },
+                    {
+                        "name": "UEI",
+                        "uniqueId": "ENG-300-707-003",
+                        "tag": "thermostat"
+                    }
+                ]
+            }
+        ]
+    }
+}
